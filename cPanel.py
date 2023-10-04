@@ -136,7 +136,7 @@ def main():
     wordlist = input(f"{FY}WORDLIST: {FW}")
 
     try:
-        with open(wordlist, "r") as file:
+        with open(f"lib/{wordlist}", "r") as file:
             lines = [line for line in file]
 
             hm = int(input(f"{FY}THREAD: {FW}"))
